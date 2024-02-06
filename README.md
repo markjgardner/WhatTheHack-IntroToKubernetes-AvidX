@@ -23,7 +23,7 @@ In this hack you will solve a common challenge for companies migrating to the cl
 - Challenge 02: **[The Azure Container Registry](Student/Challenge-02.md)**
 	 - Deploy an Azure Container Registry, secure it and publish your container.
 - Challenge 03: **[Introduction To Kubernetes](Student/Challenge-03.md)**
-	 - Install the Kubernetes CLI tool, deploy an AKS cluster in Azure, and verify it is running.
+	 - Install the Kubernetes CLI tool, connect to your cluster and set the default namespace.
 - Challenge 04: **[Your First Deployment](Student/Challenge-04.md)**
 	 - Pods, Services, Deployments: Getting your YAML on! Deploy the "FabMedical" app to your AKS cluster.
 - Challenge 05: **[Scaling and High Availability](Student/Challenge-05.md)**
