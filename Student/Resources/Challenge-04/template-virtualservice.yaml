@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: webapp-route
+spec:
+  hosts:
+  - <insert cluster FQDN here>
+  http:
+  - name: "default-route"
+    match:
+    - uri:
+        prefix: "/*"
+    route:
+    - destination:
+        host: <service-name>.<namespace>
