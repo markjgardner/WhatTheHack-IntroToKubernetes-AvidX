@@ -39,11 +39,10 @@ In this challenge we need to get our application up and running in Kubernetes. W
 - Create a deployment yaml file for the Web app using the specs from the API app, except for:
 	- Port and Target Port: 3000
 - Create a service yaml file to go with the deployment
-	- **Hint:** Not all "types" of Services are exposed to the outside world
+  	- **NOTE:** Your cluster has Istio installed. You can use a Virtual Service to access your app from the clusters domain. Use a route of your team name e.g. "/team-1"
 - **NOTE:** Applying your YAML files with kubectl can be done over and over as you update the YAML file. Only the delta will be changed.
 - **NOTE:** The Kubernetes documentation site is your friend. The full YAML specs can be found there: <https://kubernetes.io/docs>
-- Find out the External IP that was assigned to your service. You can use kubectl for this, or you can look at 'Services' in the Azure portal.
-- Test the application by browsing to the Web app's external IP and port and seeing the front page come up.
+- Test the application by browsing to the cluster domain name and your teams path to see the front page come up.
 	- Ensure that you see a list of both speakers and sessions on their respective pages.
 	- If you don't see the lists, then the web app is not able to communicate with the API app.
 
@@ -57,4 +56,5 @@ In this challenge we need to get our application up and running in Kubernetes. W
 
 * [Kubernetes Resource requests](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits)
 * [Kubernetes Service Types](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
+* [Istio Virtual Service](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
 * [kubectl cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
