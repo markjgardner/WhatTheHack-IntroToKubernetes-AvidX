@@ -2,9 +2,13 @@ apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
   name: webapp-route
+  annotations: 
+  - external-dns.alpha.kubernetes.io/target: gateway.<cluster FQDN goes here>
 spec:
+  gateways:
+    - istio-system/ingress-gateway
   hosts:
-  - <insert cluster FQDN here>
+  - <team name>.<cluster FQDN goes here>
   http:
   - name: "default-route"
     match:
