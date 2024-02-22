@@ -18,7 +18,7 @@ kind: VirtualService
 metadata:
   name: webapp-route
   annotations: 
-  - external-dns.alpha.kubernetes.io/target: endpoint.mycluster.hack.dev
+    external-dns.alpha.kubernetes.io/target: endpoint.mycluster.hack.dev
 spec:
   gateways:
     - istio-system/ingress-gateway
