@@ -28,7 +28,7 @@ spec:
   - name: "default-route"
     match:
     - uri:
-        prefix: "/*"
+        prefix: "/"
     route:
     - destination:
         host: content-web.team1
