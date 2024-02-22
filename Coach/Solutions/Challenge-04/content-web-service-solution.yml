@@ -31,4 +31,4 @@ spec:
         prefix: "/*"
     route:
     - destination:
-        host: content-api.team1
+        host: content-web.team1
