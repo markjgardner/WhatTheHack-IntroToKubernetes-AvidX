@@ -3,7 +3,7 @@ kind: VirtualService
 metadata:
   name: webapp-route
   annotations: 
-  - external-dns.alpha.kubernetes.io/target: gateway.<cluster FQDN goes here>
+    external-dns.alpha.kubernetes.io/target: gateway.<cluster FQDN goes here>
 spec:
   gateways:
     - istio-system/ingress-gateway
